@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France Libre - Staff</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    :root {
+      --primary: #0055a4;
+      --secondary: #ef4135;
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #eaeaea;
+      --muted: #aaa;
+      --radius: 1rem;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1a1a1a;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+      text-align: center;
+    }
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .staff-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .staff-card:hover {
+      transform: translateY(-5px);
+    }
+    .staff-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid var(--primary);
+    }
+    .staff-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .staff-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1a1a1a;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>👥 Staff - France Libre</h1>
+  </header>
+
+  <nav>
+    <a href="index.html#apropos">À propos</a>
+    <a href="index.html#projets">Projets</a>
+    <a href="staff.html">Staff</a>
+    <a href="index.html#rejoindre">Rejoindre</a>
+  </nav>
+
+  <section>
+    <h2>Fondateur</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="cdn/raidelf.png" alt="Raidelf">
+        <h3>Raidelf</h3>
+        <p>Fondateur</p>
+        <p>@raidelf</p>
+      </div>
+    </div>
+    <br />
+    <h2>Présidence</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="cdn/nathan.png" alt="Nathan">
+        <h3>Nathan (NathxnAzuur)</h3>
+        <p>Président</p>
+        <p>@nathxnazuur</p>
+      </div>
+      <div class="staff-card">
+        <img src="cdn/creabreizh.png" alt="Youenn">
+        <h3>Youenn (Créa'BREIZH)</h3>
+        <p>Vice Président</p>
+        <p>@creabreizh</p>
+      </div>
+    </div>
+    <br />
+    <h2>Technicien</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="cdn/arthware.png" alt="Arthur">
+        <h3>Arthur (ArthWare)</h3>
+        <p>Technicien</p>
+        <p>@arthware</p>
+      </div>
+    </div>
+    <br />
+    <h2>Administrateurs</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="cdn/adrien.png" alt="Adrien">
+        <h3>Adrien</h3>
+        <p>Administrateur</p>
+        <p>@adri1_radio</p>
+      </div>
+      <div class="staff-card">
+        <img src="cdn/corian.png" alt="Corian">
+        <h3>Corian</h3>
+        <p>Administrateur</p>
+        <p>@corian62</p>
+      </div>
+      <div class="staff-card">
+        <img src="cdn/realstone.png" alt="Pierre">
+        <h3>Pierre (RealStone)</h3>
+        <p>Administrateur</p>
+        <p>@realstone67277</p>
+      </div>
+    </div>
+    <br />
+    <h2>Modérateurs</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="cdn/cube.png" alt="Ilan">
+        <h3>Ilan (Cube)</h3>
+        <p>Modérateur</p>
+        <p>@cube76lh</p>
+      </div>
+      <div class="staff-card">
+        <img src="cdn/mathys.png" alt="Mathys">
+        <h3>Mathys (MrJavel)</h3>
+        <p>Modérateur</p>
+        <p>@mrjavel59</p>
+      </div>
+      <div class="staff-card">
+        <img src="cdn/adam.png" alt="Adam">
+        <h3>Adam (Adam68etsestc)</h3>
+        <p>Modérateur</p>
+        <p>@adam68etsestc</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2022-2025 France Libre - Tous droits réservés</p>
+  </footer>
+</body>
+</html>

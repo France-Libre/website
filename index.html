@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France Libre - Communauté</title>
+  <style>
+    :root {
+      --primary: #4da6ff;
+      --secondary: #ff6b6b;
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #f5f5f5;
+      --muted: #aaa;
+      --radius: 1rem;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    header p {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.85);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1a1a1a;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    section p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.9rem 1.6rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1a1a1a;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🇫🇷 France Libre</h1>
+    <p>Communauté conviviale depuis le 13 novembre 2022</p>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#projets">Projets</a>
+    <a href="#staff">Staff</a>
+    <a href="#rejoindre">Rejoindre</a>
+  </nav>
+
+  <section id="apropos">
+    <div class="card">
+      <h2>À propos</h2>
+      <p>
+        La <strong>France Libre</strong> était à l'origine un pays fictif. Aujourd'hui, c’est une communauté active où chacun peut s’exprimer, créer et participer à des projets collectifs dans une ambiance conviviale.
+      </p>
+    </div>
+  </section>
+
+  <section id="projets">
+    <div class="card">
+      <h2>Nos projets</h2>
+      <ul>
+        <li>Un univers fictif riche (groupes, enseignes, télé, radios)</li>
+        <li>Un serveur Minecraft collaboratif</li>
+        <li>Des webradios diffusées via AzuraCast</li>
+        <li>Une passion pour la grande distribution</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="staff">
+    <div class="card">
+      <h2>Le staff</h2>
+      <p>
+        Notre communauté est organisée avec un staff actif et une hiérarchie claire. Un <strong>président élu par élections</strong> veille au bon fonctionnement et à la convivialité de la France Libre.
+      </p>
+    </div>
+  </section>
+
+  <section id="rejoindre">
+    <div class="card">
+      <h2>Nous rejoindre</h2>
+      <p>Rejoignez-nous dès maintenant et participez à une aventure collective unique !</p>
+      <a href="https://discord.gg/" class="btn">💬 Rejoindre le Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2022-2025 France Libre - Tous droits réservés</p>
+  </footer>
+</body>
+</html>

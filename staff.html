@@ -83,7 +83,7 @@
     .staff-card:hover {
       transform: translateY(-5px);
     }
-    .staff-card img {
+    .staff-card img.profile {
       width: 80px;
       height: 80px;
       border-radius: 50%;
@@ -99,6 +99,34 @@
       font-size: 0.95rem;
       color: var(--muted);
       margin-bottom: 0.3rem;
+    }
+
+    .staff-card img.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary);
+    }
+
+    /* Icônes sociales */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .social-links a img {
+      width: 24px;
+      height: 24px;
+      border-radius: 0; /* <-- pas rond pour les icônes */
+      filter: brightness(0) saturate(100%) invert(39%) sepia(87%) saturate(2217%) hue-rotate(183deg) brightness(97%) contrast(96%);
+      transition: transform 0.2s, filter 0.3s;
+    }
+    .social-links a img:hover {
+      transform: scale(1.2);
+      filter: brightness(0) saturate(100%) invert(28%) sepia(96%) saturate(6103%) hue-rotate(348deg) brightness(95%) contrast(94%);
     }
     footer {
       text-align: center;
@@ -128,55 +156,109 @@
     <h2>Fondateur</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="cdn/raidelf.png" alt="Raidelf">
+        <img class="profile" src="cdn/raidelf.png" alt="Raidelf">
         <h3>Raidelf</h3>
         <p>Fondateur</p>
         <p>@raidelf</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@raidelf62" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://www.instagram.com/raidelf62" target="_blank">
+            <img src="cdn/instagram.svg" alt="Instagram">
+          </a>
+        </div>
       </div>
     </div>
     <br />
     <h2>Présidence</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="cdn/nathan.png" alt="Nathan">
+        <img class="profile" src="cdn/nathan.png" alt="Nathan">
         <h3>Nathan (NathxnAzuur)</h3>
         <p>Président</p>
         <p>@nathxnazuur</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@NathxnAzuur" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://x.com/nathxnazuur" target="_blank">
+            <img src="cdn/twitter.svg" alt="X (Twitter)">
+          </a>
+          <a href="https://bsky.app/profile/nathxnazuur.fr" target="_blank">
+            <img src="cdn/bluesky.svg" alt="Bluesky">
+          </a>
+          <a href="https://nathxnazuur.fr" target="_blank">
+            <img src="cdn/website.svg" alt="Site web personnel">
+          </a>
+        </div>
       </div>
       <div class="staff-card">
-        <img src="cdn/creabreizh.png" alt="Youenn">
+        <img class="profile" src="cdn/creabreizh.png" alt="Youenn">
         <h3>Youenn (Créa'BREIZH)</h3>
         <p>Vice Président</p>
         <p>@creabreizh</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@Crea.BREIZH" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://www.instagram.com/breizh.2011" target="_blank">
+            <img src="cdn/instagram.svg" alt="Instagram">
+          </a>
+        </div>
       </div>
     </div>
     <br />
     <h2>Technicien</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="cdn/arthware.png" alt="Arthur">
+        <img class="profile" src="cdn/arthware.png" alt="Arthur">
         <h3>Arthur (ArthWare)</h3>
         <p>Technicien</p>
         <p>@arthware</p>
+        <div class="social-links">
+          <a href="https://twitch.tv/nyyyxtra" target="_blank">
+            <img src="cdn/twitch.svg" alt="Twitch">
+          </a>
+        </div>
       </div>
     </div>
     <br />
     <h2>Administrateurs</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="cdn/adrien.png" alt="Adrien">
+        <img class="profile" src="cdn/adrien.png" alt="Adrien">
         <h3>Adrien</h3>
         <p>Administrateur</p>
         <p>@adri1_radio</p>
+        <div class="social-links">
+          <a href="https://youtube.com/@adri1_ytb" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://www.instagram.com/adri1_radio" target="_blank">
+            <img src="cdn/instagram.svg" alt="Instagram">
+          </a>
+        </div>
       </div>
       <div class="staff-card">
-        <img src="cdn/corian.png" alt="Corian">
+        <img class="profile" src="cdn/corian.png" alt="Corian">
         <h3>Corian</h3>
         <p>Administrateur</p>
         <p>@corian62</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@Corian62" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://x.com/Corian62" target="_blank">
+            <img src="cdn/twitter.svg" alt="X (Twitter)">
+          </a>
+          <a href="https://soundcloud.com/Corian62" target="_blank">
+            <img src="cdn/soundcloud.svg" alt="Soundcloud">
+          </a>
+        </div>
       </div>
       <div class="staff-card">
-        <img src="cdn/realstone.png" alt="Pierre">
+        <img class="profile" src="cdn/realstone.png" alt="Pierre">
         <h3>Pierre (RealStone)</h3>
         <p>Administrateur</p>
         <p>@realstone67277</p>
@@ -186,22 +268,49 @@
     <h2>Modérateurs</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="cdn/cube.png" alt="Ilan">
+        <img class="profile" src="cdn/cube.png" alt="Ilan">
         <h3>Ilan (Cube)</h3>
         <p>Modérateur</p>
         <p>@cube76lh</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@nimpus_cube" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://www.tiktok.com/@lecucubenational" target="_blank">
+            <img src="cdn/tiktok.svg" alt="TikTok">
+          </a>
+        </div>
       </div>
       <div class="staff-card">
-        <img src="cdn/mathys.png" alt="Mathys">
+        <img class="profile" src="cdn/mathys.png" alt="Mathys">
         <h3>Mathys (MrJavel)</h3>
         <p>Modérateur</p>
         <p>@mrjavel59</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/channel/UCTYKNzQoVrU4OlTy3cuKRVw" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://bsky.app/profile/javel59.bsky.social" target="_blank">
+            <img src="cdn/bluesky.svg" alt="Bluesky">
+          </a>
+          <a href="https://soundcloud.com/medias_nrjjingles" target="_blank">
+            <img src="cdn/soundcloud.svg" alt="Soundcloud">
+          </a>
+          <a href="https://www.twitch.tv/javel59" target="_blank">
+            <img src="cdn/twitch.svg" alt="Twitch">
+          </a>
+        </div>
       </div>
       <div class="staff-card">
-        <img src="cdn/adam.png" alt="Adam">
+        <img class="profile" src="cdn/adam.png" alt="Adam">
         <h3>Adam (Adam68etsestc)</h3>
         <p>Modérateur</p>
         <p>@adam68etsestc</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@adam68etsestc" target="_blank">
+            <img src="cdn/youtube.svg" alt="Youtube">
+          </a>
+        </div>
       </div>
     </div>
   </section>

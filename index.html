@@ -27,7 +27,9 @@
     document.addEventListener('DOMContentLoaded', function() {
       const videos = ['video1.mp4', 'video2.mp4', 'video3.mp4'];
       const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-      document.querySelector('source').src = 'cdn/' + randomVideo;
+      const sourceElement = document.querySelector('video source');
+      sourceElement.setAttribute('src', 'cdn/' + randomVideo);
+      document.querySelector('video').load();
     });
   </script>
 </head>

@@ -23,6 +23,13 @@
       background: black;
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = ['video1.mp4', 'video2.mp4', 'video3.mp4'];
+      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      document.querySelector('source').src = 'cdn/' + randomVideo;
+    });
+  </script>
 </head>
 <body>
 
